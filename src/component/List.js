@@ -43,7 +43,7 @@ class Listapi extends Component {
       },
    })
       .then((res) => res.json())
-     .then((d) => {console.log("data fuck:",d)
+     .then((d) => {console.log("data:",d)
         this.setState({ clothing: d });
      });
  }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import List from "./List"
 
 function Footer() {
     return (

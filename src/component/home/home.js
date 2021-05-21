@@ -1,12 +1,9 @@
 import React from "react";
 import "./home.css";
-import Product from "../Product";
-
 import Footer from '../Footer'
 import Carousel from "react-bootstrap/Carousel";
-import QuicksearchP from "./QuicksearchP";
 import Quicksearch from "./Quicksearch";
-import List from "../List";
+
 
 function Home() {
   return (

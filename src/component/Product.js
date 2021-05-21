@@ -1,4 +1,5 @@
 import React from "react";
+import { PopoverTitle } from "react-bootstrap";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 

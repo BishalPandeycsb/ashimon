@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import Product from "../Product";
-import QuicksearchP from './QuicksearchP'
-import axios from "axios";
 import QuickSearchP from "./QuicksearchP";
 
 

@@ -1,0 +1,26 @@
+reducer and setting up:::
+The Context API is a very important part of React. It helps us to make application level states and we can get the data from those states through any component. There are many alternatives, one of them is Redux. But I highly recommend you should start off with React Context API.
+Setting up React Context API is more of a boiler plate. Things won’t make sense at first but once you practice, things will automatically start making sense.
+
+
+firebase:
+So let’s prepare our database and authentication before we even work on them. We will be using Firebase. Go to https://firebase.google.com and log into your Google account.
+Now let’s see how do you set up your project. Once you’re in the Firebase console, follow the following steps.
+Click on “Add Project” and name it
+
+
+login.js
+Let’s create a new component, named Login. Now you know the drill! Create two new files, Login.js and Login.css and follow the BEM Convention!
+Let’s setup layout for the Login component. So open Login.js and get the below layout!
+
+
+So here’s how the Login component works
+We have two local states which keep the track of the values of the textboxes
+Whenever the value of the textboxes change, we change the value of state
+But you cannot visit the page yet! You need to add it to React Router and update the Navbar!
+
+
+
+
+reducer
+authorization firebase 

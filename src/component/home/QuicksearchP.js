@@ -1,8 +1,6 @@
 import React from 'react';
 import './quicksearch.css';
-import List from '../List';
 import {Link} from 'react-router-dom';
-import Container from 'react-bootstrap/Container'
 
 
 

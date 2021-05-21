@@ -47,7 +47,7 @@ const Routing = () => {
         <Header />
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/List/:type" component={List}></Route>
-        <Route path="/login"><Login/></Route>
+        <Route exact path="/login"><Login/></Route>
         <Route exact path="/checkout">
             <Checkout/>
           </Route>
