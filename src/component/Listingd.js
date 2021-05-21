@@ -29,7 +29,7 @@ const ListingD = (props) => {
     <div class="quickSearchContainer">
     <Carousel fade>
     <Carousel.Item>
-    <img class="d-block w-100" src="https://source.unsplash.com/1600x200/?laptops" alt="First slide"/>
+    <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?laptops" alt="First slide"/>
 
       <Carousel.Caption>
         <h3>Ashimon </h3>
@@ -37,7 +37,7 @@ const ListingD = (props) => {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-    <img class="d-block w-100" src="https://source.unsplash.com/1600x200/?laptops" alt="First slide"/>
+    <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?laptops" alt="First slide"/>
 
       <Carousel.Caption>
         <h3>Ashimon </h3>
@@ -45,7 +45,7 @@ const ListingD = (props) => {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-    <img class="d-block w-100" src="https://source.unsplash.com/1600x200/?laptops" alt="First slide"/>
+    <img class="d-block w-100" src="https://source.unsplash.com/1600x500/?laptops" alt="First slide"/>
 
       <Carousel.Caption>
         <h3>Ashimon </h3>
@@ -53,7 +53,7 @@ const ListingD = (props) => {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-    <img class="d-block w-100" src="https://source.unsplash.com/1200x200/?laptops" alt="First slide"/>
+    <img class="d-block w-100" src="https://source.unsplash.com/1200x500/?laptops" alt="First slide"/>
 
       <Carousel.Caption>
         <h3>Ashimon </h3>
