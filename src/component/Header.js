@@ -21,7 +21,6 @@ function Header() {
       <p> <img
       className="header__logo"
       src="https://cryptologos.cc/logos/aave-aave-logo.png"
-      alt="nothing"
     /></p>
        
       </Link>

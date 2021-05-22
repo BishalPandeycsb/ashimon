@@ -44,7 +44,7 @@ function Payment() {
         event.preventDefault();
         setProcessing(true);
 
-         await stripe.confirmCardPayment(clientSecret, {
+        const payload = await stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: elements.getElement(CardElement)
             }

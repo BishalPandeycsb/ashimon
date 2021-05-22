@@ -17,7 +17,7 @@ const promise = loadStripe(
 );
 
 const Routing = () => {
-  const [dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     // will only run once when the app component loads...
@@ -39,7 +39,7 @@ const Routing = () => {
         });
       }
     });
-  },[]);
+  }, []);
 
   return (
     <BrowserRouter>
@@ -52,7 +52,7 @@ const Routing = () => {
             <Checkout/>
           </Route>
           <Route exact path="/payment">
-              <Elements stripe={promise}>  
+              <Elements stripe={promise}>  /*higher order function it wraps the payment element 
               <Payment/>
             </Elements>
           </Route>
