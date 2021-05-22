@@ -1,10 +1,9 @@
 import React from "react";
-import { PopoverTitle } from "react-bootstrap";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
 
 function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
 
   const addToBasket = () => {
     // dispatch the item into the data layer
@@ -37,7 +36,7 @@ function Product({ id, title, image, price, rating }) {
             {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <span role="img">🌟</span>
             ))}
         </div>
         </center>

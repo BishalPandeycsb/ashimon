@@ -39,6 +39,7 @@ function Login() {
                 <img
                     className="login__logo"
                     src='https://cryptologos.cc/logos/aave-aave-logo.png' 
+                    alt="kei xaina"
                 />
             </Link>
 

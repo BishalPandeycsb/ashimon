@@ -19,7 +19,7 @@ const QuicksearchP = (props) => {
                       <Link to={`/List/${item.type}`}>
                       <div class="tilecontainer">
                           <div class="tileComponent1">
-                              <img src={`./image/${item.type}.jpg`} className="blockimage"/>
+                              <img src={`./image/${item.type}.jpg`} alt="Girl in a jacket" className="blockimage"/>
                           </div>
                           <div class="tileComponent2">
                               <div class="componentHeading">
