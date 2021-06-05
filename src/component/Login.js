@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Login.css'
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
+import Re from './Re';
 
 function Login() {
     const history = useHistory();
@@ -9,29 +10,17 @@ function Login() {
     const [password, setPassword] = useState('');
 
     const signIn = e => {
-        e.preventDefault();
+        e.preventDefault();                       //stops refreshing
 
         auth
             .signInWithEmailAndPassword(email, password)
-            .then(auth => {
-                history.push('/')
-            })
-            .catch(error => alert(error.message))
-    }
-
-    const register = e => {
-        e.preventDefault();
-
-        auth
-            .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
-                // it successfully created a new user with email and password
-                if (auth) {
-                    history.push('/')
-                }
+                history.push('/')           //logged in and redirect garam ka garne ho
             })
             .catch(error => alert(error.message))
     }
+
+   
 
     return (
         <div className='login'>
@@ -54,16 +43,17 @@ function Login() {
 
                     <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
                 </form>
-
                 <p>
-                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
-                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale.
                 </p>
-
-                <button onClick={register} className='login__registerButton'>Create your Amazon Account</button>
+                <hr/>
+                <center> <h3> If New !</h3></center> 
+                <Link to='/register'>
+                <button onClick={<Link to='/Re'></Link>} className='login__registerButton'>Register</button>
+                </Link>
             </div>
         </div>
     )
 }
 
-export default Login
+export default Login;

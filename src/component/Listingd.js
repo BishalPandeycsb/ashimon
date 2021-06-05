@@ -9,7 +9,7 @@ const ListingD = (props) => {
     if (d) {
       return d.map((item) => {
         return (
-          <div className="col-md-6">
+          <div className="col-lg-6 col-xs-12">
             <Product
               id={item._id}
               title={item.title}

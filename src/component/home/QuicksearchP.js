@@ -15,8 +15,10 @@ const QuicksearchP = (props) => {
                 
                    
                 return(
-                      <div className="col-md-6">
-                      <Link to={`/List/${item.type}`}>
+                      
+                    <div class="col-lg-6  col-xs-12">
+                      <Link to={`/List/${item.type}`} >
+                    
                       <div class="tilecontainer">
                           <div class="tileComponent1">
                               <img src={`./image/${item.type}.jpg`} className="blockimage"/>
@@ -31,7 +33,9 @@ const QuicksearchP = (props) => {
                           </div>
                       </div>
                   
-                  </Link>
+                 
+                      
+                      </Link>
                       </div>
                        
                     

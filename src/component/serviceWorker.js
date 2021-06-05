@@ -135,6 +135,7 @@ export function unregister() {
         registration.unregister();
       })
       .catch(error => {
+        console.log("yo valid haina");
         console.error(error.message);
       });
   }

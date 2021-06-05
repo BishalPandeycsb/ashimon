@@ -7,6 +7,7 @@ import Header from "./Header";
 import Checkout from "./Checkout";
 import Payment from "./Payment";
 import Orders from "./Orders";
+import Re from './Re';
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { Elements } from "@stripe/react-stripe-js";
@@ -17,7 +18,7 @@ const promise = loadStripe(
 );
 
 const Routing = () => {
-  const [{}, dispatch] = useStateValue();
+  const [{basket}, dispatch] = useStateValue();
 
   useEffect(() => {
     // will only run once when the app component loads...
@@ -48,6 +49,7 @@ const Routing = () => {
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/List/:type" component={List}></Route>
         <Route exact path="/login"><Login/></Route>
+        <Route exact path="/Register"><Re/></Route>
         <Route exact path="/checkout">
             <Checkout/>
           </Route>

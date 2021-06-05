@@ -24,8 +24,8 @@ function Home() {
                 <h3>Ashimon </h3>
                 <p>E-commerce website</p>
               </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
+              </Carousel.Item>
+              <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={`./images/2.jpg`}
@@ -61,16 +61,16 @@ function Home() {
                 <p>E-commerce website</p>
               </Carousel.Caption>
             </Carousel.Item>
+            
+            
           </Carousel>
         
       </div>
        
       <div className="home__row" >
       <Quicksearch/>
-      
-      
       </div>
-      <div className="last">
+      <div className="home__row">
        <Footer/> 
       </div>
     </div>

@@ -3,11 +3,23 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
+import { db } from "./firebase";
+import { auth } from "firebase";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
+ 
+  db.collection("info").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+       
+        
+    });
+});
+
 
   return (
+    
     <div className="checkout">
       <div className="checkout__left">
         <img
@@ -17,7 +29,8 @@ function Checkout() {
         />
 
         <div>
-          <h3>Hello, {user?.email}</h3>
+          
+          <h2>Hello,{user?.email}</h2>
           <h2 className="checkout__title">Your shopping Basket</h2>
 
           {basket.map((item) => (
