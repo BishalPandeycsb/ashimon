@@ -49,7 +49,7 @@ const Routing = () => {
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/List/:type" component={List}></Route>
         <Route exact path="/login"><Login/></Route>
-        <Route exact path="/Register"><Re/></Route>
+        <Route exact path="/register" component={Re}></Route>
         <Route exact path="/checkout">
             <Checkout/>
           </Route>
