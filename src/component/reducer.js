@@ -47,7 +47,11 @@ const reducer = (state, action) => {
         ...state,                                      //return current state garne tarika
         user: action.user
       }
-
+      case "SET_NAME":
+        return{
+          ...state,
+          name:action.name
+        }
     default:
       return state;
   }

@@ -15,6 +15,7 @@ function Order({ order }) {
             </p>
             <div className="container">
             {order.data.basket?.map(item => (
+                
                 <CheckoutProduct
                     id={item.id}
                     title={item.title}
@@ -24,7 +25,9 @@ function Order({ order }) {
                     hideButton
                 />
                 
-            ))}
+                
+            )
+            )}
             <hr/>
             
         </div>

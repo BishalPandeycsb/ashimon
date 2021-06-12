@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
@@ -8,6 +8,8 @@ import { auth } from "./firebase";
 
 function Header() {
   const [{ basket, user },dispatch] = useStateValue();
+  const [{Name},setName]=useStateValue();
+  console.log("name ma k xa",Name);
 
   const handleAuthenticaton = () => {
     if (user) {

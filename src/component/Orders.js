@@ -34,6 +34,7 @@ function Orders() {
             <div className='orders__order'>
                 {orders?.map(order => (
                     <Order order={order} />
+                    
                 ))}
             </div>
         </div>

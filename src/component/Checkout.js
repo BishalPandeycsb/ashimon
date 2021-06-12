@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import { useStateValue } from "./StateProvider";
@@ -7,20 +7,31 @@ import { db } from "./firebase";
 import { auth } from "firebase";
 
 function Checkout() {
+  
   const [{ basket, user }, dispatch] = useStateValue();
+  const [Name, setName] = useState('');
+  console.log("name issss:",Name);
+  
+  db.collection("info").get().then((snapshot)=>{
+    snapshot.docs.forEach(doc=>{
+      if(user?.uid===doc.id)
+      {
+        setName(doc.data().name)
+        console.log("name is:",doc.data().name);
+      }
+      
+    })
+  })
  
-  db.collection("info").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-       
+
         
-    });
-});
+ 
 
 
   return (
-    
+       
     <div className="checkout">
+   
       <div className="checkout__left">
         <img
           className="checkout__ad"
@@ -30,7 +41,7 @@ function Checkout() {
 
         <div>
           
-          <h2>Hello,{user?.email}</h2>
+          <h2>Hello,{Name}</h2>
           <h2 className="checkout__title">Your shopping Basket</h2>
 
           {basket.map((item) => (
